@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<title>Snapshot HTML CSS Web Template</title>
+<!--
+Snapshot Template
+http://www.templatemo.com/tm-493-snapshot
+
+Zoom Slider
+https://vegas.jaysalvat.com/
+
+Caption Hover Effects
+http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
+-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/component.css">
+	
+    <link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/vegas.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Google web font  -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    
+
+    
+
+    h1 {
+      text-align: center;
+      /* font-family: 'Playfair Display', serif;
+      font-size: 3rem; */
+      margin-bottom: 50px;
+      color: #b38766;
+      position: relative;
+    }
+
+    h1::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 2px;
+      background: #d4a373;
+      margin: 16px auto 0;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 30px;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: #d4a373;
+    }
+
+    .event {
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      background: #ffffffee;
+      padding: 20px 25px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(210, 170, 140, 0.2);
+      animation: fadeInUp 0.5s ease;
+    }
+
+    .event-icon {
+      background: #d4a373;
+      color: white;
+      border-radius: 50%;
+      width: 46px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-right: 20px;
+      box-shadow: 0 0 0 4px #fef2e6;
+    }
+
+    .event-content {
+      flex: 1;
+    }
+
+    .event-time {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #a85d3d;
+    }
+
+    .event-title {
+      font-size: 1.3rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      margin: 4px 0 6px;
+      color: #744c32;
+    }
+
+    .event-description {
+      font-size: 0.95rem;
+      color: #7c5c47;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(15px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .event {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .event-icon {
+        margin-bottom: 12px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+	
+</head>
+<body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+
+<!-- Preloader section -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-pulse"></div>
+</div>
+
+
+<!-- Navigation section  -->
+
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+        </button>
+        <a href="#top" class="navbar-brand smoothScroll"><img src="images/cmfi.jpg" class="img-cmfi" alt="" srcset=""></a>
+      </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#top" class="smoothScroll"><span>Accueil</span></a></li>
+            <li><a href="#about" class="smoothScroll"><span>A propos</span></a></li>
+            <li><a href="#gallery" class="smoothScroll"><span>Programme</span></a></li>
+            <li><a href="#contact" class="smoothScroll"><span>S'inscrire</span></a></li>
+          </ul>
+       </div>
+
+    </div>
+  </div>
+
+
+<!-- Home section -->
+
+<section id="home">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Retraite des non mariés</h1>
+        <p class="wow fadeInUp" data-wow-delay="0.9s">le 6 juin 2025</p>
+        <a href="#contact" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">S'inscrire</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- About section -->
+
+<section id="about">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-9 col-sm-8 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="about-thumb">
+          <h1>Genèse 2:24</h1>
+          <p>C'est pourquoi l'homme quittera son père et sa mère, et s'attachera à sa femme, et ils deviendront une seule chair.</p>
+        </div>
+      </div>
+
+      
+      
+      <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.6s">
+        <img src="images/about-img.jpg" class="img-responsive img-circle" alt="About">
+      </div>
+
+      <div class="clearfix"></div>
+
+      <!-- <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="section-title text-center">
+          <h1>Snapshot Team</h1>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        </div>
+      </div> -->
+
+      <!-- team carousel -->
+<!--       <div id="team-carousel" class="owl-carousel">
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/team-img1.jpg" class="img-responsive img-circle" alt="Mary">
+          </div>
+          <h2 class="heading">Mary, CEO</h2>
+          <p class="description">Aliquam ac justo est. Praesent feugiat cursus est.</p>
+        </div>
+      </div>
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/team-img2.jpg" class="img-responsive img-circle" alt="Jack">
+          </div>
+          <h2 class="heading">Jack, Founder</h2>
+          <p class="description">Maecenas sed diam eget risus varius blandit sit non.</p>
+        </div>
+      </div>
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/team-img3.jpg" class="img-responsive img-circle" alt="Linda">
+          </div>
+          <h2 class="heading">Linda, Manager</h2>
+          <p class="description">Phasellus nec ante in nunc molestie tincidunt ut eu diam.</p>
+        </div>
+      </div>
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/team-img4.jpg" class="img-responsive img-circle" alt="Sandy">
+          </div>
+          <h2 class="heading">Sandy, Director</h2>
+          <p class="description">Curabitur vulputate euismod neque et tincidunt.</p>
+        </div>
+      </div>
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/team-img5.jpg" class="img-responsive img-circle" alt="Lukia">
+          </div>
+          <h2 class="heading">Lukia, Fashion</h2>
+          <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
+        </div>
+      </div>
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/team-img6.jpg" class="img-responsive img-circle" alt="George">
+          </div>
+          <h2 class="heading">George, Admin</h2>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+        </div>
+      </div>
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/team-img7.jpg" class="img-responsive img-circle" alt="Day">
+          </div>
+          <h2 class="heading">Day, Accountant</h2>
+          <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
+        </div>
+      </div>
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/team-img8.jpg" class="img-responsive img-circle" alt="Lynn">
+          </div>
+          <h2 class="heading">Lynn, Marketing</h2>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+        </div>
+      </div> -->
+
+      </div>
+      <!-- end team carousel -->
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Gallery section -->
+
+<section id="gallery">
+  <div class="container">
+    <div class="row">
+      <div class="timeline" id="timeline">
+        <h1>Au programme</h1>
+        <!-- Événements dynamiques ici -->
+      </div>
+      <!-- <div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="section-title">
+          <h1>Gallery</h1>
+          <p>Nullam scelerisque, quam nec iaculis vulputate, arcu ligula sollicitudin nisl, ac volutpat erat nulla a arcu.</p>
+        </div>
+      </div> -->
+
+      <ul class="grid cs-style-4">
+        <!-- <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><img src="images/gallery-img1.jpg" alt="image 1"></div>
+            <figcaption>
+              <h1>Sapien arcu</h1>
+              <small>Cum sociis natoque penatibus et magnis dis parturient montes.</small>
+              <a href="#">Read More</a>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><img src="images/gallery-img2.jpg" alt="image 2"></div>
+            <figcaption>
+              <h1>Aliquam erat</h1>
+              <small>Suspendisse venenatis quam sed libero euismod feugiat.</small>
+              <a href="#">Details</a>
+            </figcaption>
+          </figure>
+        </li> -->
+
+        <!-- <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><img src="images/gallery-img3.jpg" alt="image 3"></div>
+            <figcaption>
+              <h1>Cras ante sem</h1>
+              <small>Aenean urna massa, convallis vehicula velit et, dictum pellentesque nisi.</small>
+              <a href="#">Learn More</a>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><img src="images/gallery-img4.jpg" alt="image 4"></div>
+            <figcaption>
+              <h1>Sed ornare</h1>
+              <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+              <a href="#">Full Post</a>
+            </figcaption>
+          </figure>
+        </li> -->
+      </ul>
+
+      
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact section -->
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+
+      
+       <div class="col-md-offset-1 col-md-10 col-sm-12">
+        <a title="Logiciel billetterie en ligne" href="https://www.weezevent.com/widget_multi.php?408506.1.1.bo" class="weezevent-widget-integration" target="_blank" data-src="https://www.weezevent.com/widget_multi.php?408506.1.1.bo" data-width="100%" data-height="100%" data-id="multi" data-resize="1" data-npb="0" data-width_auto="1">Billetterie Weezevent</a><script type="text/javascript" src="https://www.weezevent.com/js/widget/min/widget.min.js"></script>
+
+        <div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
+          <h1>Envoyez nous un message</h1>
+          <!-- <p>Nunc suscipit ante in lectus laoreet, nec pharetra diam dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> -->
+        </div>
+
+        <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.8s">
+          
+          <div class="col-md-6 col-sm-6">
+            <input name="name" type="text" class="form-control" id="name" placeholder="Nom">
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+          </div>
+          <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+            <input type="submit" class="form-control" value="Envoyer">
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer section -->
+
+<footer>
+	<div class="container">
+    
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+            
+                <ul class="social-icon"> 
+                    <li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.2s"></a></li>
+                    <li><a href="#" class="fa fa-whatsapp wow fadeInUp" data-wow-delay="0.4s"></a></li>
+                    <li><a href="#" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.8s"></a></li>
+                </ul>
+
+				<p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; 2025 CMCI PAT </p>
+                
+			</div>
+			
+		</div>
+        
+	</div>
+</footer>
+
+<!-- Back top -->
+<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- Javascript  -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vegas.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/toucheffects.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+  const events = [
+    {
+      time: "14:00",
+      title: "Accueil",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      icon: "heart"
+    },
+    {
+      time: "15:00",
+      title: "Louanges",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      icon: "wine"
+    },
+    {
+      time: "17:00",
+      title: "Dîner",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      icon: "utensils-crossed"
+    },
+    {
+      time: "19:30",
+      title: "Enseignements",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      icon: "smile"
+    },
+    {
+      time: "21:00",
+      title: "Communion",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      icon: "music"
+    },
+    {
+      time: "22:00",
+      title: "Fin",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      icon: "party-popper"
+    }
+  ];
+
+  const timeline = document.getElementById('timeline');
+
+  events.forEach(ev => {
+    const event = document.createElement('div');
+    event.className = 'event';
+    event.innerHTML = `
+      <div class="event-icon" data-lucide="${ev.icon}"></div>
+      <div class="event-content">
+        <div class="event-time">${ev.time}</div>
+        <div class="event-title">${ev.title}</div>
+        <div class="event-description">${ev.description}</div>
+      </div>
+    `;
+    timeline.appendChild(event);
+  });
+
+  lucide.createIcons();
+</script>
+
+</body>
+</html>
